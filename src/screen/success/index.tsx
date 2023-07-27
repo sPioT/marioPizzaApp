@@ -6,7 +6,7 @@ import styles from "./styles";
 
 const SuccessScreen = ({ navigation }) => {
   const route = useRoute();
-  const { message, message2, linkLabel } = route.params;
+  const { message, message2, linkLabel }: any = route.params;
 
   return (
     <View style={styles.container}>

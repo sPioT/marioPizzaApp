@@ -1,11 +1,12 @@
 import { CommonActions } from "@react-navigation/native";
 import { useEffect, useState } from "react";
-import { Text, View } from "react-native";
 import Order from "../../models/Order";
 import Pizza from "../../models/Pizza";
 import PizzaService from "../../services/pizzaService";
 import StyledButton from "../StyledButton";
 import styles from "./styles";
+import { Text, View } from "react-native";
+import React from "react";
 
 const OrderFooter = ({ order, setOrder, pizzas, navigation }) => {
   const [total, setTotal] = useState<number>(0);
