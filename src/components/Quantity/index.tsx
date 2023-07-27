@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
 import NumericInput from "react-native-numeric-input";
+import React from "react";
 
 import styles from "./styles";
 

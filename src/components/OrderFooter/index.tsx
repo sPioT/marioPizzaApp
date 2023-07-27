@@ -8,13 +8,22 @@ import styles from "./styles";
 import { Text, View } from "react-native";
 import React from "react";
 
-const OrderFooter = ({ order, setOrder, pizzas, navigation }) => {
+interface props {
+  order: Order[];
+  setOrder: Function;
+  pizzas: Pizza[];
+  navigation: any;
+}
+
+const OrderFooter = ({ order, setOrder, pizzas, navigation }: props) => {
   const [total, setTotal] = useState<number>(0);
 
   useEffect(() => {
     let total = 0;
 
-    order.foreach((item: Order) => {
+    console.log(order);
+
+    order.forEach((item: Order) => {
       total +=
         item.quantity *
         pizzas.find((pizza: Pizza) => pizza.id === item.pizzaId).price;

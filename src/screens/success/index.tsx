@@ -1,5 +1,5 @@
-import { useRoute } from "@react-navigation/native";
 import React from "react";
+import { useRoute } from "@react-navigation/native";
 import { Pressable, Text, View } from "react-native";
 import Header from "../../components/Header";
 import styles from "./styles";

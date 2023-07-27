@@ -8,7 +8,7 @@ export default class AuthService {
 
   static async getJwt(login): Promise<JWT> {
     try {
-      const response = await fetch(`http://192.168.1.153:8080/auth/signin`, {
+      const response = await fetch(`http://192.168.1.145:8080/auth/signin`, {
         method: "POST",
         body: JSON.stringify(login),
         headers: { "Content-Type": "application/json" },
@@ -43,7 +43,7 @@ export default class AuthService {
 
   static async createAccount(account: Account) {
     try {
-      const response = await fetch(`http://192.168.1.153:8080/auth/signup`, {
+      const response = await fetch(`http://192.168.1.145:8080/auth/signup`, {
         method: "POST",
         body: JSON.stringify(account),
         headers: { "Content-Type": "application/json" },

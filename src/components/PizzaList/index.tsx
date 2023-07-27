@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { FlatList, Text, View } from "react-native";
+import { FlatList, View } from "react-native";
 import Pizza from "../Pizza";
 import styles from "./styles";
+import React from "react";
 
 const PizzaList = ({ pizzas, updateOrder, navigation }) => {
   return (

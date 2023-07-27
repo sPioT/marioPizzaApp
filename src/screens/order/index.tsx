@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { View } from "react-native";
 import Header from "../../components/Header";
 import OrderFooter from "../../components/OrderFooter";
@@ -7,6 +7,7 @@ import Order from "../../models/Order";
 import Pizza from "../../models/Pizza";
 import PizzaService from "../../services/pizzaService";
 import styles from "./styles";
+import React from "react";
 
 const OrderScreen = ({ navigation }) => {
   const [pizzas, setPizzas] = useState<Pizza[]>([]);

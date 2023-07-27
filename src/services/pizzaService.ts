@@ -4,7 +4,7 @@ import LoginService from "./authService";
 
 export default class PizzaService {
   static async loadPizzas(): Promise<Pizza[]> {
-    return fetch(`http://192.168.1.153:8080/pizza/`, {
+    return fetch(`http://192.168.1.145:8080/pizza/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -18,7 +18,7 @@ export default class PizzaService {
   }
 
   static async saveOrder(order: Order[]): Promise<boolean> {
-    return fetch(`http://192.168.1.153:8080/pizza/`, {
+    return fetch(`http://192.168.1.145:8080/pizza/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

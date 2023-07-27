@@ -1,8 +1,8 @@
-import React from "react";
 import { View } from "react-native";
-import Header from "../../src/components/Header";
-import Login from "../../src/components/Login";
+import Header from "../../components/Header";
+import Login from "../../components/Login";
 import styles from "./styles";
+import React from "react";
 
 const LoginScreen = ({ navigation }) => {
   return (
